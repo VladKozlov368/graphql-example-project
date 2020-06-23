@@ -8,5 +8,5 @@ yarn-error.log
 package-lock.json
 .DS_Store
 
-dotenv/*
+#dotenv/*
 !dotenv/example.env

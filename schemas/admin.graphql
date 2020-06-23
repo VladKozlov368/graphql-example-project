@@ -1,0 +1,14 @@
+scalar DateTime
+
+type AuthPayload {
+    accessToken: String!
+    refreshToken: String!
+    admin: Admin!
+}
+
+type Admin {
+    id: ID!
+    email: String
+    createdAt: DateTime!
+    updatedAt: DateTime!
+}

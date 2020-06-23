@@ -1,0 +1,12 @@
+.idea/
+.logs/
+
+node_modules/
+dist/
+coverage/
+yarn-error.log
+package-lock.json
+.DS_Store
+
+dotenv/*
+!dotenv/example.env

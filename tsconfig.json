@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "types": ["jest", "node"],
+    "target": "es2016",
+    "module": "commonjs",
+    "lib": [
+      "es5",
+      "es6",
+      "dom",
+      "es2016",
+      "esnext.asynciterable"
+    ],
+    "outDir": "dist",
+    "rootDir": "src",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "baseUrl": "localhost:3000"
+  },
+
+  "exclude": ["node_modules", "test"],
+  "include": ["./src/**/*.tsx", "./src/**/*.ts"],
+
+  "sourceMap": true
+}

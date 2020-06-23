@@ -1,0 +1,40 @@
+# import Admin from "admin.graphql"
+# import User from "user.graphql"
+
+scalar Upload
+
+type Query {
+    """Returns user profile by accessToken."""
+    profile: Admin!
+
+    """Returns user profile by accessToken."""
+    user(id: Int!): User!
+
+    """Returns user profile by accessToken."""
+    show(show: ShowInput!): String
+
+    """Returns user profile by accessToken."""
+    showArr(show: [ShowInput!]): String
+}
+
+input ShowInput {
+    title: String
+    imageUrl: String
+    description: String
+    linkSpotify: String
+    linkApplePodcasts: String
+}
+
+type Mutation {
+    """Login by email and password."""
+    adminSignIn(email: String!, password: String): AuthPayload!
+
+    """Login by email and password."""
+    adminSignUp(email: String!, password: String!): AuthPayload!
+
+    """Login by email and password."""
+    userSignUp(firstName: String!, lastName: String!, email: String!, password: String!): UserPayload!
+
+    """Generate a new pair of tokens: accessToken and refreshToken. Requires refreshToken in request header."""
+    token: AuthPayload!
+}

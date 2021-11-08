@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@types/winston-loggly-bulk": "^3.0.0",
-    "apollo-server": "^2.13.1",
+    "apollo-server": "^2.25.3",
     "apollo-server-express": "^2.13.1",
     "app-root-path": "^3.0.0",
     "bcrypt-nodejs": "^0.0.3",
